@@ -13,7 +13,7 @@ project(direct_lidar_odometry)
 add_compile_options(-std=c++14)
 set(CMAKE_BUILD_TYPE "Release")
 
-find_package( PCL REQUIRED )
+find_package( PCL QUIET REQUIRED )
 include_directories(${PCL_INCLUDE_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 link_directories(${PCL_LIBRARY_DIRS})
